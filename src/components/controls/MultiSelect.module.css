@@ -1,0 +1,41 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 6px var(--space-sm);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.option:hover {
+  background-color: var(--color-background);
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  flex: 1;
+}
+
+.count {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}

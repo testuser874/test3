@@ -1,0 +1,10 @@
+.layout {
+  display: grid;
+  grid-template-rows: var(--header-height) 1fr;
+  min-height: 100vh;
+}
+
+.main {
+  padding: var(--space-lg);
+  overflow-y: auto;
+}

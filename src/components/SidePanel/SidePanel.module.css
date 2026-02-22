@@ -1,0 +1,87 @@
+.panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: var(--panel-width);
+  height: 100vh;
+  background-color: var(--color-surface);
+  border-left: 1px solid var(--color-border);
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.08);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel.open {
+  transform: translateX(0);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin: 0;
+}
+
+.closeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.closeButton:hover {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.filterLabel {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.filterPlaceholder {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin: 0;
+  padding: var(--space-sm);
+  background-color: var(--color-background);
+  border-radius: 6px;
+  border: 1px dashed var(--color-border);
+}

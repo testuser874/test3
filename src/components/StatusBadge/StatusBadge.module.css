@@ -1,0 +1,37 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+  border: 1.5px solid currentColor;
+  background-color: transparent;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+  flex-shrink: 0;
+}
+
+.draft {
+  color: var(--color-status-draft);
+}
+
+.active {
+  color: var(--color-status-active);
+}
+
+.closed {
+  color: var(--color-status-closed);
+}
+
+.archived {
+  color: #6b7280;
+}

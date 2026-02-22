@@ -1,0 +1,139 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  height: 100%;
+}
+
+.card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(80, 70, 229, 0.08);
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.typeBadge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px var(--space-sm);
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.pulse {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.engagement {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.barometer {
+  background-color: #fce7f3;
+  color: #9d174d;
+}
+
+.custom {
+  background-color: #e0e7ff;
+  color: #3730a3;
+}
+
+.title {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.metaItem {
+  white-space: nowrap;
+}
+
+.separator {
+  color: var(--color-border);
+}
+
+.anonymous {
+  font-style: italic;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin-top: var(--space-xs);
+}
+
+.responseRate {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rateHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.rateLabel {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.rateValue {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.rateBar {
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--color-border);
+  overflow: hidden;
+}
+
+.rateFill {
+  height: 100%;
+  border-radius: 2px;
+  background-color: var(--color-primary);
+  transition: width var(--transition-normal);
+}
+
+.respondents {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.dates {
+  display: flex;
+  gap: var(--space-md);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  padding-top: var(--space-xs);
+  border-top: 1px solid var(--color-border);
+  margin-top: auto;
+}

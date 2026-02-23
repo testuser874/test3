@@ -17,18 +17,20 @@ function App() {
     dispatch(fetchFilterDefinitions());
   }, [dispatch]);
 
-  const testFunction = (test: string) => {
+  const testFunctionG = (test: string) => {
     console.log(test);
   };
 
-  const testMemo = useMemo(() => {
-    testFunction("hello");
+  const testMemoG = useMemo(() => {
+    testFunctionG("hello");
     return 1;
   }, [testFunction]);
 
+  console.log("new commit");
+
   return (
     <div className={styles.layout}>
-      {testMemo}
+      {testMemoG}
       <Header />
       <main className={styles.main}>
         <CampaignList />
